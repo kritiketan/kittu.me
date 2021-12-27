@@ -8,7 +8,7 @@ const Footer = () => {
           href="https://kittu.me/"
           target="_self"
         >
-          Powered by{' '}
+          Powered by &nbsp;{' '}
           <code className={styles.code}>kittu</code>
         </a>
       </footer>
