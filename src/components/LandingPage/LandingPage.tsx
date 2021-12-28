@@ -31,7 +31,7 @@ const LandingPage = () => {
               
               
               <p>
-              { Content.topicsOfInterest.map((topic)=> <a href="#"><code className={styles.code}> {topic} </code>&nbsp;&nbsp;&nbsp; </a>  ) }
+              { Content.topicsOfInterest.map((topic)=> <a href="#" key={topic}><code className={styles.code}> {topic} </code>&nbsp;&nbsp;&nbsp; </a>  ) }
               </p>
               
             </div>
