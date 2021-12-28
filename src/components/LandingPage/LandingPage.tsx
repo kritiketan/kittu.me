@@ -2,7 +2,6 @@ import Container from "../Container/Container";
 import styles from '../../../styles/Home.module.css'
 import Header from '../Header/Header'
 import * as Content from '../../content/Content';
-import RandomCodeBlock from "../RandomCodeBlock/RandomCodeBlock";
 
 
 const LandingPage = () => {
@@ -32,13 +31,10 @@ const LandingPage = () => {
               
               
               <p>
-              { Content.topicsOfInterest.map((topic)=> <RandomCodeBlock content={topic} key = {topic}/> ) }
+              { Content.topicsOfInterest.map((topic)=> <a href="#"><code className={styles.code}> {topic} </code>&nbsp;&nbsp;&nbsp; </a>  ) }
               </p>
               
             </div>
-
-
-
             <div className={styles.grid}>
               
 

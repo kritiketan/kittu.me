@@ -14,3 +14,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Deployment
 - This repo uses github workflow for CI/CD
 - S3 url: http://kittu.me.s3-website-ap-southeast-2.amazonaws.com
+- Route53: https://kittu.me
+
+## What will it host?
+- Personal portfolio
+- Podcast guest profiles
+- Podcast motivation 
+- Podcast Guest Sheet
+- Contact Form
