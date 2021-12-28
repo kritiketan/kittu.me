@@ -10,12 +10,9 @@ const LandingPage = () => {
     return (
         <Container title = {landingTitle}>
 
-
-          <main className={styles.main}>
-            
             <Header/>
             
-            <div className={styles.spacer}>
+            <section className={styles.horizontalSeperator}>
               <p>
               I enjoy doing a lot a things. After the past few years as a <code className={styles.code}>#software engineer</code>  i 
               feel a sense of empowerment when <code className={styles.code}>#expressing</code>  myself digitally. Being able to <code className={styles.code}>#code</code> and 
@@ -33,14 +30,9 @@ const LandingPage = () => {
               <p>
               { Content.topicsOfInterest.map((topic)=> <a href="#" key={topic}><code className={styles.code}> {topic} </code>&nbsp;&nbsp;&nbsp; </a>  ) }
               </p>
-              
-            </div>
-            <div className={styles.grid}>
-              
-
-              
-            </div>
-          </main>
+              </section>
+            
+          
 
         </Container>
     )

@@ -1,9 +1,12 @@
 .main {
-  min-height: 100vh;
+  min-height: 80vh;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  line-height: 2.5;
 }
 
 .title a {
@@ -109,25 +112,26 @@
 
   }
 
-  .spacer {
-    margin-top: 2rem;
+  .main {
+    margin-top: 2rem !important;
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
     line-height: 3;
-    border-top: 0.2px solid #45484d;
+    width: 75%;
   }
   
 }
 
 
-.spacer {
+.horizontalSeperator {
   margin-top: 2rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  line-height: 2.5;
+  min-height: 0.3px;
   border-top: 0.2px solid #45484d;
 }
 
 .randonCodeBlock {
-  margin: 5px
+  box-shadow: 0 0 5px #838486;
+  border-radius: 5px;
 }
 
 

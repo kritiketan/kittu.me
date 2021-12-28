@@ -5,8 +5,7 @@ const HeaderNav = () => {
         <header className={styles.headerNav}>
     
         <a
-          href="https://kittu.me/"
-          target="_self"
+          href="/podcast"
         >
           {' '}
           <code className={styles.code}>#podcast</code>
