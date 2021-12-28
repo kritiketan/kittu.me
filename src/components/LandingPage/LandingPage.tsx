@@ -19,10 +19,10 @@ const LandingPage = () => {
               <code>kittu-verse</code>
             </p>
             
-            <section>
-              
+            <section>            
+              { Content.landingPage.body.map((item)=><p key={item}>{item}</p>) }
               <p>
-              { Content.topicsOfInterest.map((topic)=> <a href="#" key={topic}><code> {topic} </code>&nbsp;&nbsp;&nbsp; </a>  ) }
+                { Content.topicsOfInterest.map((topic)=> <a href="#" key={topic}><code> {topic} </code>&nbsp;&nbsp;&nbsp; </a>  ) }
               </p>
               </section>
             

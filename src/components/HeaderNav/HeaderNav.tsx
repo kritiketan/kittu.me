@@ -5,12 +5,14 @@ import * as theme from '../../styles/theme'
 const HeaderNavStyle = style({
   display: 'flex',
   flex: 1,
-  padding: '1rem 0',
+  padding: '0.3rem 0',
+  width:'100vw',
   marginBottom: '4rem',
   justifyContent: 'center',
   alignItems: 'center',
   backgroundColor: theme.Colors.DARK_GREY,
   position: 'sticky',
+  flexWrap:'wrap',
   $nest: {
     'a:hover': {
       color: 'green'

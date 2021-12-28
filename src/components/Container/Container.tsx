@@ -8,13 +8,17 @@ import { style } from 'typestyle';
 
 const main = style({
   display: 'flex',
-  flex: 1,
   flexDirection: 'column',
   alignItems: 'center',
-  minHeight: '80vh',
-  marginLeft: '10rem',
-  marginRight: '10rem',
   lineHeight: '2.5'
+})
+
+const inner = style({
+  display: 'flex',
+  flexDirection: 'column',
+  minHeight: '85vh',
+  width: '80vw',
+  alignItems: 'center',
 })
 
 interface ContainerProps {
@@ -24,14 +28,14 @@ interface ContainerProps {
 const Container: FunctionComponent<ContainerProps> = ({ title, children }) => {
   return (
       <>
-      <div>
       <HeaderNav/>
       <DocumentHead title={title}/>
-        <div className={main}>
-            {children}
+      <div className={main}>
+        <div className={inner}>
+              {children}
         </div>
+      </div>
       <Footer/>
-    </div>
       </>
     
   )

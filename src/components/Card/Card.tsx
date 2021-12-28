@@ -8,7 +8,7 @@ interface CardProps {
 const Card:FunctionComponent<CardProps> = ({heading,body,imageUrl}) => {
     return (
         <>
-        <a href="https://nextjs.org/docs" className={styles.card}>
+        <a href="https://nextjs.org/docs">
             <h2>{ heading} &rarr;</h2>
             <p>{ body }</p>
         </a>
