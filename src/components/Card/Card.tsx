@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import styles from '../../../styles/Home.module.css'
 
 interface CardProps {
     heading:string,

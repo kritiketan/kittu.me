@@ -1,20 +1,22 @@
-import styles from '../../../styles/Home.module.css'
 
+import { style } from 'typestyle'
+import * as theme from '../../styles/theme'
+
+const footerStyle = style({
+  display: 'flex',
+  padding: '5px 0',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: theme.Colors.DARK_GREY,
+  $nest:{}
+})
 const Footer = () => {
-
     return (
-<footer className={styles.footer}>
-        <a
-          href="https://kittu.me/"
-          target="_self"
-        >
+      <footer className={footerStyle}>
           Powered by &nbsp;{' '}
-          <code className={styles.code}>kittu</code>
-        </a>
+          <code className={theme.code}>kittu</code>
       </footer>
     )
-
 }
-
 
 export default Footer;

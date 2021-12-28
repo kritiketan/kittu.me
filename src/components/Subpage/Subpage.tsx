@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import Container from "../Container/Container"
-import styles from '../../../styles/Home.module.css'
 import {style} from 'typestyle';
+import * as theme from '../../styles/theme'
 
 const HeaderSection = style({
     display:'flex',
@@ -15,8 +15,6 @@ const HeaderSectionLeft25 = style({
     alignItems:'left',
     width:'25%'
 })
-
-
 
 const gutter=style({
     width:'10%'
@@ -38,15 +36,15 @@ const Subpage = () => {
             <div className={HeaderSection}>
                 
                 <div className={HeaderSectionLeft25}>
-                    <img className={styles.randonCodeBlock} src="/whataboutprcover-with-people.png" width="250px" height="250px" alt="" />
+                    <img className={theme.imageBoxBig} src="/whataboutprcover-with-people.png" width="250px" height="250px" alt="" />
                 </div>
                 <div id="gutter" className={gutter}>
 
                 </div>
                 
                 <div className={HeaderSectionRight75}>
-                <h2 className={styles.title}>What about PR</h2> 
-                <p className={styles.description}>
+                <h2>What about PR</h2> 
+                <p >
                 A podcast capturing the story and spirit of early-stage migrants across the world.
                 </p>
                 </div>
@@ -54,7 +52,7 @@ const Subpage = () => {
 
 
 
-            <section className={styles.horizontalSeperator}>
+            <section>
                 Motivation
                 <p>
                  Although migration is not a new concept, rather one that predates modern civilization and humans, there have been a few notable events in the past which can be noted as waves of migration (think waves of coffee or revolutions).
