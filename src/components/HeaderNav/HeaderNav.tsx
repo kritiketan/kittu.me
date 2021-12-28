@@ -1,15 +1,18 @@
 import styles from '../../../styles/Home.module.css'
+import Link from 'next/link'
 const HeaderNav = () => {
 
     return (
         <header className={styles.headerNav}>
-    
-        <a
-          href="/podcast"
+    <Link href="/podcast">
+    <a
+          
         >
           {' '}
           <code className={styles.code}>#podcast</code>
         </a>
+    </Link>
+        
 
         <a
           href="https://kittu.me/"
