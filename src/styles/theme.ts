@@ -8,6 +8,7 @@ export enum Colors {
     WHITE = '#fff',
     SHADOW_COLOR = '#fff',
     NEON_GREEN = '#39FF14',
+    LIGHT_GREY = '#7f7f7f',
 
 
     DARK_GREY = '#45484d',
@@ -51,44 +52,25 @@ export const highlightGreen = style({
     fontWeight: 'bold'
 })
 
-export const card = style({
-    margin: '1rem',
-    padding: '1.5rem',
-    textAlign: 'left',
-    color: 'inherit',
-    textDecoration: 'none',
-    border: '1px solid #eaeaea',
-    borderRadius: '10px',
-    transition: 'color 0.15s ease, border-color 0.15s ease',
-    maxWidth: '300px',
-    $nest: {
-        '&:hover': {
-            color: '#0070f3',
-            borderColor: '#0070f3'
-        },
-        h2:{
-            margin: '0 0 1rem 0',
-            fontSize: '1.5rem'
-        },
-        p:{
-            margin: 0,
-            fontSize: '1.25rem',
-            lineHeight: '1.5'
-        }
-    }
-
-
-})
 
 export const imageBoxBig = style({
     boxShadow: `0 0 5px ${Colors.SHADOW_COLOR}`,
-    borderRadius: '5px'
+    borderRadius: '5px',
+    width:'100%',
+    height:'50%'
 })
 
 export const logoWhite = style({
     color: Colors.WHITE,
     width: '30px',
     height: '30px'
+})
+
+export const grid = style({
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
+    flexWrap:'wrap'
 })
 
 

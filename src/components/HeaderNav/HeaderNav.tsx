@@ -7,10 +7,11 @@ const HeaderNavStyle = style({
   flex: 1,
   padding: '0.3rem 0',
   width:'100vw',
-  marginBottom: '2rem',
   justifyContent: 'center',
   alignItems: 'center', 
-  position: 'sticky',
+  position: 'fixed',
+  backgroundColor:theme.Colors.GLOBAL_BACKGROUND,
+  boxShadow: `0 0 1px ${theme.Colors.SHADOW_COLOR}`,
   flexWrap:'wrap',
   $nest: {
     'a:hover': {

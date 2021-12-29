@@ -19,6 +19,7 @@ const inner = style({
   minHeight: '85vh',
   width: '80vw',
   alignItems: 'center',
+  marginTop:'8rem'
 })
 
 const background = style({

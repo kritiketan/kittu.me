@@ -1,6 +1,7 @@
 import Container from "../Container/Container";
-import * as Content from '../../content/Content';
+import * as PagesMeta from '../../content/pagesMeta'
 import * as theme from '../../styles/theme'
+import Card from "../Card/Card";
 
 
 const LandingPage = () => {
@@ -15,19 +16,14 @@ const LandingPage = () => {
             <p>
               Sound interesting?
             </p>
-            <p className={theme.highlightGreen}>
-              ⬇️
-            </p>
+            <span className={theme.grid}>
+              { Object.keys(PagesMeta.pages).map((page:any)=>
+                <Card heading={page} body="" url={page} key={page}/>
+              ) }
 
-            <div>
-
-            </div>
-
+            </span>
             
-           
             
-          
-
         </Container>
     )
 }

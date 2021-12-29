@@ -21,3 +21,7 @@ a {
   box-sizing: border-box;
 }
 
+.as {
+  background: url('./../public/empty.png');
+}
+
