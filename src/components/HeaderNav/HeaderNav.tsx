@@ -7,18 +7,17 @@ const HeaderNavStyle = style({
   flex: 1,
   padding: '0.3rem 0',
   width:'100vw',
-  marginBottom: '4rem',
+  marginBottom: '2rem',
   justifyContent: 'center',
-  alignItems: 'center',
-  backgroundColor: theme.Colors.DARK_GREY,
+  alignItems: 'center', 
   position: 'sticky',
   flexWrap:'wrap',
   $nest: {
     'a:hover': {
-      color: 'green'
+      color: theme.Colors.NEON_GREEN
     },
-    a : {
-      padding: '1rem'
+    code : {
+      padding: '1rem 5rem'
     }
   }
 })
@@ -28,37 +27,29 @@ const HeaderNav = () => {
 
     return (
         <header className={HeaderNavStyle}>
-    <Link href="/podcast">
-    <a>
-          {' '}
-          <code className={theme.code}>#podcast</code>
-        </a>
-    </Link>
+        
+        
+        <Link href="/podcast">
+          <code className={theme.code}>.goToPodcast()</code>
+        </Link>
+
+        <Link href="/podcast">
+          <code className={theme.code}>.goToBlog()</code>
+        </Link>
         
 
-        <a
-          href="https://kittu.me/"
-          target="_self"
-        >
-          {' '}
-          <code className={theme.code}>#blog</code>
-        </a>
+        <Link href="/">
+          <img src="favicon.png" className={theme.logoWhite}/>
+        </Link>
 
-        <a
-          href="https://kittu.me/"
-          target="_self"
-        >
-          {' '}
-          <code className={theme.code}>#linkedin</code>
-        </a>
 
-        <a
-          href="https://kittu.me/"
-          target="_self"
-        >
-          {' '}
-          <code className={theme.code}>#resume</code>
-        </a>
+        <Link href="/podcast">
+          <code className={theme.code}>.goToLinkedIn()</code>
+        </Link>
+
+        <Link href="/podcast">
+          <code className={theme.code}>.goToGitHub()</code>
+        </Link>
 
       </header>
     )

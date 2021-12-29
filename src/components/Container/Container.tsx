@@ -3,8 +3,8 @@ import { FunctionComponent } from 'react'
 import DocumentHead from '../DocumentHead/DocumentHead'
 import Footer from '../Footer/Footer'
 import HeaderNav from '../HeaderNav/HeaderNav'
-import styles from '../../../styles/Home.module.css'
 import { style } from 'typestyle';
+import * as theme from '../../styles/theme'
 
 const main = style({
   display: 'flex',
@@ -21,22 +21,29 @@ const inner = style({
   alignItems: 'center',
 })
 
+const background = style({
+  backgroundColor:theme.Colors.GLOBAL_BACKGROUND,
+  color:theme.Colors.WHITE,
+})
+
 interface ContainerProps {
     title: string
 }
 
 const Container: FunctionComponent<ContainerProps> = ({ title, children }) => {
   return (
-      <>
-      <HeaderNav/>
-      <DocumentHead title={title}/>
-      <div className={main}>
-        <div className={inner}>
-              {children}
+      <div className={background}>
+        
+        <DocumentHead title={title}/>
+        <div className={main}>
+        <HeaderNav/>
+          <div className={inner}>
+                
+                {children}
+          </div>
         </div>
+        <Footer/>
       </div>
-      <Footer/>
-      </>
     
   )
 }

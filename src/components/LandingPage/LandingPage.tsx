@@ -1,6 +1,6 @@
 import Container from "../Container/Container";
-import Header from '../Header/Header'
 import * as Content from '../../content/Content';
+import * as theme from '../../styles/theme'
 
 
 const LandingPage = () => {
@@ -9,22 +9,22 @@ const LandingPage = () => {
     return (
         <Container title = {landingTitle}>
 
-            <Header/>
-
-            <h2>
-            👋🏼 Hi there
-            </h2>
+            <p className={theme.HeadingBold}>👋🏼 Hi, I&apos;m Kittu</p>
+            <p className={theme.SubHeadingReg}> I like 
+              <span className={theme.highlightGreen}> coding 👨🏻‍💻, writing 📝 </span>and <span className={theme.highlightGreen}>talking 🎙.</span> </p>
             <p>
-              Welcome to the{' '}
-              <code>kittu-verse</code>
+              Sound interesting?
             </p>
+            <p className={theme.highlightGreen}>
+              ⬇️
+            </p>
+
+            <div>
+
+            </div>
+
             
-            <section>            
-              { Content.landingPage.body.map((item)=><p key={item}>{item}</p>) }
-              <p>
-                { Content.topicsOfInterest.map((topic)=> <a href="#" key={topic}><code> {topic} </code>&nbsp;&nbsp;&nbsp; </a>  ) }
-              </p>
-              </section>
+           
             
           
 

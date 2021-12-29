@@ -3,9 +3,16 @@ import { style } from 'typestyle';
 
 /************** META***************/
 export enum Colors {
+
+    GLOBAL_BACKGROUND = '#36454F',
+    WHITE = '#fff',
+    SHADOW_COLOR = '#fff',
+    NEON_GREEN = '#39FF14',
+
+
     DARK_GREY = '#45484d',
     ORANGE = '#FCB07E',
-    SHADOW_COLOR = '#838486',
+    
     GREEN = '7EA172'
 }
 
@@ -14,9 +21,17 @@ enum fonts {
 
 }
 
+/************** STYLES ***************/
+export const HeadingBold = style({
+    fontSize:'60px',
+    fontWeight:'bold'
+})
 
-/************** DEFINITION ***************/
-//background: var(--main-code-bg-color);
+export const SubHeadingReg = style({
+    fontSize:'18px',
+    fontWeight:'normal'
+})
+
 export const code = style({
     borderRadius: '5px',
     padding: '0.7rem',
@@ -24,14 +39,18 @@ export const code = style({
     fontFamily: fonts.code,
     $nest: {
         '&:hover':{
-            color: Colors.GREEN
+            color: Colors.NEON_GREEN,
+            cursor: 'pointer',
+            transition:'all 1s ease'
         }
     }
-  })
+})
 
+export const highlightGreen = style({
+    color: Colors.NEON_GREEN,
+    fontWeight: 'bold'
+})
 
-
-/************** STYLES ***************/
 export const card = style({
     margin: '1rem',
     padding: '1.5rem',
@@ -66,6 +85,11 @@ export const imageBoxBig = style({
     borderRadius: '5px'
 })
 
+export const logoWhite = style({
+    color: Colors.WHITE,
+    width: '30px',
+    height: '30px'
+})
 
 
 
